@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<mat-card class="card-pesquisa">
+    <h3>Formulário de pesquisa do Youtube</h3>
+    <p>Busque vídeos do Youtube:</p>
+
+    <mat-grid-list cols="3" rowHeight="40">
+        <mat-grid-tile [colspan]="2">
+            <mat-form-field class="width-100">
+                <input matInput [(ngModel)]="termoDeBusca" placeholder="Busque...">
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <button mat-flat-button color="primary" (click)="buscaTermo()">Buscar</button>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+</mat-card>
+
+<hr/>
+
+<mat-card class="card-video">
+
+</mat-card>
+
+
+<app-footer></app-footer>
